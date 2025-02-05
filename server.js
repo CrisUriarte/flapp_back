@@ -13,6 +13,11 @@ app.use(
     origin: "https://flapp-front.onrender.com",  // Permitir frontend
     methods: "GET,POST,PUT,DELETE",
     credentials: true
+  },
+  {
+    origin: "http://localhost:5173/",  // Permitir frontend
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true
   })
 );
 app.use(express.json());

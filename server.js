@@ -10,12 +10,9 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: "https://flapp-front.onrender.com",  // Permitir frontend
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true
-  },
-  {
-    origin: "http://localhost:5173/",  // Permitir frontend
+    origin: ["https://flapp-front.onrender.com", 
+      "http://localhost:5173"
+    ],  // Permitir frontend
     methods: "GET,POST,PUT,DELETE",
     credentials: true
   })

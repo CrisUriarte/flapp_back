@@ -11,7 +11,7 @@ const app = express();
 app.use(
   cors({
     origin: ["https://flapp-front.onrender.com", 
-      "https://flapp-front-serv.onrender.com/",
+      "https://flapp-front-serv.onrender.com",
       "http://localhost:5173"
     ],  // Permitir frontend
     methods: "GET,POST,PUT,DELETE",

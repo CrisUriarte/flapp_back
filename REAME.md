@@ -1,11 +1,30 @@
---Recibir carrito
-recibe info, pasa por dto para confirmar la data que envian.
+### backend flapp
+Este es el backend de nuestro e-commerce, construido con Node.js, Express y conectado con Render.com.
 
---Paginacion
-Enviamos 10 primeros productos para armar el front y elegir productos.
-luego al ir cambiando pagina, enviar en el post el numero de pagina, para hacer el skip en la url y traer los sigueintes productos.
+---
+
+### Clonar el Repositorio**
+```bash
+git clone https://github.com/CrisUriarte/flapp_back.git
+cd flapp-back
+
+npm install
+
+npm run dev
+```
+Quedara corriendo en http://localhost:3000  (/api/cart/)
+
+### backend end con docker
+```bash
+docker build -t my-backend .
+docker run -p 3000:3000 my-backend
+```
+
+### despliegue
+
+Actualmente se encuentra desplegado con render en https://flapp-back.onrender.com
 
 
-Para l boton generar carrito existe un endpoint de la api de carritos. con esta generamos carritos al azar.
 
-Trae el total de productos y guardamos en un array. armar objeto con id,nombre,precio por unidad, decuneto, cantidad solicitada, stock obtenido, rating, stock real.
+
+

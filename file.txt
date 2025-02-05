@@ -1,0 +1,23 @@
+curl -X POST http://localhost:3030/api/cart/buy \
+     -H "Content-Type: application/json" \
+     -d '[
+       {
+         "productId": "1",
+         "price": 50,
+         "quantity": 2,
+         "discount": 10
+       },
+       {
+         "productId": "3",
+         "price": 30,
+         "quantity": 3,
+         "discount": 2
+       }
+     ]'
+
+
+
+
+     curl -X POST http://localhost:3030/api/cart/ \
+     -H "Content-Type: application/json" \
+     -d {"page":8}

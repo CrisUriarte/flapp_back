@@ -40,7 +40,6 @@ const buyCart = async (req, res) =>{
 const randomCart= async (req, res)=>{
     try {
         const cart = await cartServices.randomCart()
-        console.log(cart)
         res.status(200).json({success: true, status:200, message:'carrito Aleatorio', body: cart})
     } catch (error) {
         console.log(error)
